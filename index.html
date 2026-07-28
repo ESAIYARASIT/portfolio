@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Esaiyarasi T | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== PAGE LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">ET</span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo"><span class="logo-mark">&lt;/&gt;</span>Esaiyarasi<span>T</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="section hero">
+
+    <!-- decorative left-side tech bubble cluster -->
+    <div class="tech-bubbles" aria-hidden="true">
+      <span class="bubble b1"><i class="devicon-html5-plain"></i></span>
+      <span class="bubble b2"><i class="devicon-react-original"></i></span>
+      <span class="bubble b3"><i class="devicon-python-plain"></i></span>
+      <span class="bubble b4"><i class="devicon-nodejs-plain"></i></span>
+      <span class="bubble b5"><i class="devicon-java-plain"></i></span>
+      <span class="bubble b6"><i class="devicon-mongodb-plain"></i></span>
+      <span class="bubble b7"><i class="devicon-mongodb-plain"></i></span>
+    
+    </div>
+
+    <div class="hero-card fade-in">
+
+      <!-- corner-bracket edge accents (replaces a full continuous border) -->
+      <span class="hero-corner tl" aria-hidden="true"></span>
+      <span class="hero-corner tr" aria-hidden="true"></span>
+      <span class="hero-corner bl" aria-hidden="true"></span>
+      <span class="hero-corner br" aria-hidden="true"></span>
+
+      <div class="hero-slides" id="heroSlides">
+
+        <!-- SLIDE 1 — intro -->
+        <div class="hero-slide active" data-slide="0">
+          <div class="avatar-ring">
+            <div class="avatar">ET</div>
+          </div>
+          <span class="hero-eyebrow">For AI &amp; Full-Stack Development</span>
+          <h1 class="hero-name">Esaiyarasi T</h1>
+          <p class="hero-role"><span id="typedRole"></span><span class="cursor">|</span></p>
+        </div>
+
+        <!-- SLIDE 2 — send resume -->
+        <div class="hero-slide" data-slide="1">
+          <div class="resume-send-visual">
+            <i data-lucide="send"></i>
+          </div>
+          <h3 class="slide-heading">Resume, Ready to Send</h3>
+          <p class="slide-sub">One click gets you my full experience &amp; projects.</p>
+        </div>
+
+        <!-- SLIDE 3 — profile card -->
+        <div class="hero-slide" data-slide="2">
+
+    <div class="avatar-photo">
+        <img src="esaiimg.png" alt="Esaiyarasi T">
+    </div>
+
+    <h3 class="slide-name">Esaiyarasi T</h3>
+    <p class="slide-college">PPG Institute of Technology, Coimbatore</p>
+    <p class="slide-dept">Computer Science &amp; Engineering</p>
+
+</div>
+
+
+      </div>
+
+      <a href="assets/resume.pdf" download="Esaiyarasi-T-Resume.pdf" class="btn btn-gold magnetic" id="resumeBtn">
+        <i data-lucide="download"></i>
+        <span>Download Resume</span>
+      </a>
+      <a href="resume.html" target="_blank" rel="noopener" class="view-online-link">
+        <i data-lucide="file-text"></i> View resume online
+      </a>
+
+      <div class="hero-pagination" id="heroPagination">
+        <span class="active" data-goto="0">01</span><span data-goto="1">02</span><span data-goto="2">03</span>
+      </div>
+    </div>
+
+    <!-- WHAT I DO -->
+    <div class="section-block fade-in" id="what-i-do">
+      <div class="whatido-grid">
+        <div class="whatido-intro">
+          <span class="eyebrow">My Expertise</span>
+          <h2 class="whatido-title">What I Do</h2>
+          <p>
+            From UIand UX Designs to  full stack web apps, I enjoy owning a feature
+            end-to-end — clean code, thoughtful UI, and solutions that actually solve the problem.
+          </p>
+          <a href="#skills" class="btn-text-link">View All Skills <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="whatido-cards">
+          <div class="service-card glass">
+            <div class="service-icon"><i data-lucide="layout-panel-left"></i></div>
+            <h3>Full Stack Development</h3>
+            <p>Building complete web apps end-to-end with React, Node.js, Express and MongoDB.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i data-lucide="brain-circuit"></i></div>
+            <h3>AI &amp; NLP</h3>
+            <p>Training and applying models like BERT to solve real-world text and bias-detection problems.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i data-lucide="layout-template"></i></div>
+            <h3>Responsive UI Design</h3>
+            <p>Crafting clean, attractive, mobile-friendly interfaces with HTML, CSS and JavaScript.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i data-lucide="database"></i></div>
+            <h3>Databases &amp; Cloud</h3>
+            <p>Designing SQL schemas and deploying with cloud computing fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section-block fade-in" id="skills">
+      <span class="eyebrow tools-eyebrow">My  </span>
+      <h2 class="section-title tools-title">Skills & known Technologies.</h2>
+
+      <div class="tools-grid">
+        <div class="tool-badge" title="Python">
+          <i class="devicon-python-plain"></i>
+          <span>Python</span>
+        </div>
+        <div class="tool-badge" title="JavaScript">
+          <i class="devicon-javascript-plain"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tool-badge" title="TypeScript">
+          <i class="devicon-typescript-plain"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="tool-badge" title="HTML5">
+          <i class="devicon-html5-plain"></i>
+          <span>HTML</span>
+        </div>
+        <div class="tool-badge" title="CSS3">
+          <i class="devicon-css3-plain"></i>
+          <span>CSS</span>
+        </div>
+        <div class="tool-badge" title="AI / NLP / ML">
+          <i data-lucide="brain-circuit"></i>
+          <span>AI · NLP · ML</span>
+        </div>
+        <div class="tool-badge" title="React">
+          <i class="devicon-react-original"></i>
+          <span>React</span>
+        </div>
+        <div class="tool-badge" title="Node.js">
+          <i class="devicon-nodejs-plain"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tool-badge" title="MongoDB">
+          <i class="devicon-mongodb-plain"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="tool-badge" title="SQL">
+          <i data-lucide="database"></i>
+          <span>SQL</span>
+        </div>
+        <div class="tool-badge" title="Cloud Computing">
+          <i data-lucide="cloud"></i>
+          <span>Cloud</span>
+        </div>
+        <div class="tool-badge" title="GitHub">
+          <i class="devicon-github-original"></i>
+          <span>GitHub</span>
+        </div>
+      </div>
+
+      <!-- LEARNING JOURNEY LINE GRAPH -->
+      <div class="linegraph-wrap glass">
+        <h3 class="timeline-heading">My Learning Journey</h3>
+
+        <svg viewBox="0 0 800 320" class="linegraph-svg" id="journeySvg" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="lineStroke" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#67e8f9"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+            <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- gridlines -->
+          <line x1="40" y1="60" x2="770" y2="60" class="grid-line"/>
+          <line x1="40" y1="120" x2="770" y2="120" class="grid-line"/>
+          <line x1="40" y1="180" x2="770" y2="180" class="grid-line"/>
+          <line x1="40" y1="240" x2="770" y2="240" class="grid-line"/>
+
+          <!-- area under line -->
+          <path d="M60,227 L196,183 L332,139 L468,106 L604,80 L740,47 L740,260 L60,260 Z" fill="url(#areaFill)" stroke="none"/>
+
+          <!-- growth line -->
+          <path id="journeyPath" d="M60,227 L196,183 L332,139 L468,106 L604,80 L740,47"
+                fill="none" stroke="url(#lineStroke)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- data points -->
+          <g class="point-group">
+            <circle cx="60" cy="227" r="6" class="point"/>
+            <text x="60" y="283" class="point-label">2020</text>
+            <text x="60" y="300" class="point-sub">SSLC</text>
+          </g>
+          <g class="point-group">
+            <circle cx="196" cy="183" r="6" class="point"/>
+            <text x="196" y="283" class="point-label">2022</text>
+            <text x="196" y="300" class="point-sub">HSC &amp; College</text>
+          </g>
+          <g class="point-group milestone-point">
+            <circle cx="332" cy="139" r="8" class="point point-milestone"/>
+            <text x="332" y="283" class="point-label">2024</text>
+            <text x="332" y="300" class="point-sub">APPIN Intern</text>
+            <text x="332" y="115" class="point-callout">Full Stack Java</text>
+          </g>
+          <g class="point-group milestone-point">
+            <circle cx="468" cy="106" r="8" class="point point-milestone"/>
+            <text x="468" y="283" class="point-label">2025</text>
+            <text x="468" y="300" class="point-sub">CSUITE Intern</text>
+            <text x="468" y="82" class="point-callout">Cyber Security</text>
+          </g>
+          <g class="point-group milestone-point">
+            <circle cx="604" cy="80" r="8" class="point point-milestone"/>
+            <text x="604" y="283" class="point-label">2025</text>
+            <text x="604" y="300" class="point-sub">Certifications</text>
+            <text x="604" y="56" class="point-callout">NPTEL + Research</text>
+          </g>
+          <g class="point-group milestone-point">
+            <circle cx="740" cy="47" r="8" class="point point-milestone"/>
+            <text x="740" y="283" class="point-label">2026</text>
+            <text x="740" y="300" class="point-sub">KAR + Capstone</text>
+            <text x="740" y="26" class="point-callout">Web Dev Intern</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- EXPERIENCE -->
+    <div class="section-block fade-in" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-grid">
+
+        <div class="experience-card glass">
+          <div class="exp-row">
+            <div>
+              <h3>Web Developer Intern</h3>
+              <p class="exp-company">KAR International Infotech · 2026</p>
+              <p class="exp-desc">Contributed to web development tasks, enhanced frontend features, and developed applications while working on real-time projects.</p>
+            </div>
+            <a href="#" class="btn btn-outline-gold small" target="_blank" rel="noopener"><i data-lucide="external-link"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="experience-card glass">
+          <div class="exp-row">
+            <div>
+              <h3>Cyber Security Intern</h3>
+              <p class="exp-company">CSUITE Tech Lab · 2025</p>
+              <p class="exp-desc">Handled how real-world threats are detected and managed. Worked on prevention of unauthorized access while ensuring data accuracy, reliability, and accessibility.</p>
+            </div>
+            <a href="#" class="btn btn-outline-gold small" target="_blank" rel="noopener"><i data-lucide="external-link"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="experience-card glass">
+          <div class="exp-row">
+            <div>
+              <h3>Full Stack Java Intern</h3>
+              <p class="exp-company">APPIN Technology · 2024</p>
+              <p class="exp-desc">Created a train ticket booking website, gaining knowledge on real-world project development using Java.</p>
+            </div>
+            <a href="#" class="btn btn-outline-gold small" target="_blank" rel="noopener"><i data-lucide="external-link"></i> View Certificate</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PROJECTS (side-scrolling) -->
+    <div class="section-block fade-in" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-carousel-wrap">
+        <button class="carousel-arrow left" id="carouselPrev" aria-label="Scroll projects left">
+          <i data-lucide="chevron-left"></i>
+        </button>
+
+        <div class="projects-scroll" id="projectsScroll">
+
+          <div class="project-card glass reveal">
+            <div class="project-flip">
+              <div class="flip-inner">
+                <div class="flip-front flip-ai">
+                  <i data-lucide="brain-circuit"></i>
+                  <span class="flip-tag">AI · NLP</span>
+                </div>
+                <div class="flip-back">
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>BERT-based text understanding</li>
+                    <li>Detects framing &amp; omission bias</li>
+                    <li>Published as a research paper</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Explainable AI Framework for News Bias Detection</h3>
+              <p>An AI system that analyzes news articles to detect bias, using BERT to understand text meaning and identify framing and omission-based bias. Published as a research paper.</p>
+              <div class="project-tags"><span>AI</span><span>Python</span><span>NLP</span></div>
+              <div class="project-links">
+                <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener" class="btn btn-outline-gold small"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass reveal">
+            <div class="project-flip">
+              <div class="flip-inner">
+                <div class="flip-front flip-blog">
+                  <i data-lucide="book-open"></i>
+                  <span class="flip-tag">React · Node.js</span>
+                </div>
+                <div class="flip-back">
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Create &amp; publish articles</li>
+                    <li>Responsive, attractive UI</li>
+                    <li>Full stack React + Node</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Blog Application</h3>
+              <p>A user-friendly blog platform built with React and Node.js that allows users to create and publish articles and posts, with a responsive and attractive UI.</p>
+              <div class="project-tags"><span>React</span><span>Node.js</span></div>
+              <div class="project-links">
+                <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener" class="btn btn-outline-gold small"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass reveal">
+            <div class="project-flip">
+              <div class="flip-inner">
+                <div class="flip-front flip-email">
+                  <i data-lucide="send"></i>
+                  <span class="flip-tag">React · SMTP</span>
+                </div>
+                <div class="flip-back">
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Send &amp; receive mail via SMTP</li>
+                    <li>Adaptive, full stack architecture</li>
+                    <li>Built with React &amp; Node.js</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Adaptive Email Client App</h3>
+              <p>A full stack email application built with React, Node.js and the SMTP protocol, enabling users to send and receive mail.</p>
+              <div class="project-tags"><span>React.js</span><span>Node.js</span><span>SMTP</span></div>
+              <div class="project-links">
+                <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener" class="btn btn-outline-gold small"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-arrow right" id="carouselNext" aria-label="Scroll projects right">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section-block fade-in" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card glass">
+        <p>
+          Passionate Computer Science student skilled in Python, SQL, HTML and CSS. Experienced in developing
+          AI-based and full-stack applications through academic projects and internships. Passionate about
+          applying problem-solving and web development skills to build real-world solutions.
+        </p>
+        <blockquote class="quote">"Success is the sum of small efforts, repeated day in and day out."</blockquote>
+
+        <div class="about-grid">
+          <div class="about-block">
+            <h4><i data-lucide="graduation-cap"></i> Education</h4>
+            <ul class="about-list">
+              <li><strong>BE — Computer Science &amp; Engineering</strong><br>PPG Institute of Technology, Coimbatore · CGPA 7.8 · 2022–2026</li>
+              <li><strong>HSC</strong><br>AMG Matric Higher Secondary School · 78% · 2022</li>
+              <li><strong>SSLC</strong><br>AMG Matric Higher Secondary School · 85% · 2020</li>
+            </ul>
+          </div>
+
+          <div class="about-block">
+            <h4><i data-lucide="badge-check"></i> Certifications &amp; Achievements</h4>
+            <div class="badge-row">
+              <span class="badge">NPTEL — Cloud Computing</span>
+              <span class="badge">Research Paper Published</span>
+              <span class="badge">Robomatic — DBMS (MongoDB &amp; RDBMS)</span>
+              <span class="badge">Deloitte Data Analytics — Virtual Internship</span>
+              <span class="badge">Tech Trek Hackathon</span>
+              <span class="badge">Techno Kreaticon Ideathon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section-block fade-in" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+
+        <div class="contact-info glass">
+          <a href="mailto:esaitamil27@gmail.com" class="contact-item magnetic">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <span class="contact-text">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">esaitamil27@gmail.com</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/esaiy-arasi-963a33269/" target="_blank" rel="noopener" class="contact-item magnetic">
+            <i data-lucide="linkedin" class="contact-icon"></i>
+            <span class="contact-text">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">esaiy-arasi-963a33269</span>
+            </span>
+          </a>
+          <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener" class="contact-item magnetic">
+            <i data-lucide="github" class="contact-icon"></i>
+            <span class="contact-text">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/ESAIYARASIT</span>
+            </span>
+          </a>
+          <a href="tel:+916369197292" class="contact-item magnetic">
+            <i data-lucide="phone" class="contact-icon"></i>
+            <span class="contact-text">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 63691 97292</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-form-card glass">
+          <h3> Feedback to improve more </h3>
+          <form id="feedbackForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+
+            
+
+            <button type="submit" class="btn btn-gold magnetic">Send Message</button>
+            <p class="form-success" id="formSuccess">Thanks! Your message has been received.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo"><span class="logo-mark">&lt;/&gt;</span>Esaiyarasi<span>T</span></a>
+          <p>Computer Science student building AI-driven and full-stack solutions with curiosity and care.</p>
+          <div class="footer-socials">
+            <a href="mailto:esaitamil27@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            <a href="https://www.linkedin.com/in/esaiy-arasi-963a33269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="tel:+916369197292" aria-label="Phone"><i data-lucide="phone"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Research Paper</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Esaiyarasi T. Built with care.</p>
+        <a href="#home" class="footer-top-link" id="footerTop">
+          Back to top <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- ===== BACK TO TOP (floating) ===== -->
+  <button id="backToTop" class="back-to-top magnetic" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

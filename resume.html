@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Esaiyarasi T — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+<style>
+  :root{
+    --gold: #d4af37;
+    --gold-deep: #b8912b;
+    --text-dark: #2b2b2b;
+    --text-muted: #6b6b6b;
+    --soft-yellow: #fff8e1;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background: var(--soft-yellow);
+    padding: 40px 16px 80px;
+  }
+  .resume-sheet{
+    max-width: 780px; margin: 0 auto;
+    background:#fff; border-radius: 14px;
+    border: 1px solid rgba(212,175,55,0.4);
+    box-shadow: 0 10px 30px rgba(212,175,55,0.15);
+    padding: 48px 56px;
+  }
+  .no-print{
+    max-width: 780px; margin: 0 auto 20px; display:flex; justify-content:space-between; align-items:center;
+  }
+  .back-link{ display:inline-flex; align-items:center; gap:6px; font-size:0.9rem; color: var(--text-muted); text-decoration:none; }
+  .back-link:hover{ color: var(--gold-deep); }
+  .print-btn{
+    display:inline-flex; align-items:center; gap:6px; padding: 10px 18px; border-radius: 30px;
+    border:none; cursor:pointer; font-weight:600; font-size:0.85rem; color:#fff;
+    background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  }
+  .print-btn svg, .back-link svg{ width:16px; height:16px; }
+
+  h1{ font-family:'Cormorant Garamond', serif; font-size: 2.4rem; }
+  .role{ color: var(--gold-deep); font-weight:500; margin-top:4px; }
+  .contact-row{ display:flex; flex-wrap:wrap; gap:16px; margin-top: 14px; font-size:0.85rem; color: var(--text-muted); }
+  .contact-row span{ display:inline-flex; align-items:center; gap:5px; }
+  .contact-row a{ color:inherit; text-decoration:none; }
+  .contact-row a:hover{ color: var(--gold-deep); }
+  .contact-row svg{ width:14px; height:14px; }
+
+  section{ margin-top: 28px; }
+  h2{
+    font-size:0.85rem; text-transform:uppercase; letter-spacing:1.5px;
+    color: var(--gold-deep); border-bottom:1px solid rgba(212,175,55,0.35); padding-bottom:6px; margin-bottom:14px;
+  }
+  .entry{ margin-bottom: 16px; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-head{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; }
+  .entry-title{ font-weight:600; font-size:0.98rem; }
+  .entry-sub{ font-size:0.85rem; color: var(--gold-deep); }
+  .entry-date{ font-size:0.8rem; color: var(--text-muted); white-space:nowrap; }
+  .entry-desc{ font-size:0.88rem; color: var(--text-muted); margin-top:4px; line-height:1.6; }
+  .entry-tags{ margin-top:6px; font-size:0.78rem; color: var(--gold-deep); font-style:italic; }
+  ul.skills-list{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; }
+  ul.skills-list li{
+    font-size:0.8rem; padding:5px 12px; border-radius:20px; background: var(--soft-yellow);
+    border: 1px solid rgba(212,175,55,0.4); color: var(--text-dark);
+  }
+  ul.plain-list{ list-style:disc; padding-left:18px; }
+  ul.plain-list li{ font-size:0.85rem; color: var(--text-muted); margin-bottom:6px; line-height:1.5; }
+
+  @media (max-width: 640px){
+    .resume-sheet{ padding: 30px 22px; }
+  }
+
+  @media print{
+    body{ background:#fff; padding:0; }
+    .no-print{ display:none; }
+    .resume-sheet{ box-shadow:none; border:none; border-radius:0; max-width:100%; padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="no-print">
+    <a href="index.html" class="back-link"><i data-lucide="arrow-left"></i> Back to portfolio</a>
+    <button class="print-btn" onclick="window.print()"><i data-lucide="printer"></i> Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-sheet">
+    <h1>Esaiyarasi T</h1>
+    <p class="role">Full Stack &amp; AI Developer · Computer Science Engineering Student</p>
+    <div class="contact-row">
+      <span><i data-lucide="mail"></i> esaitamil27@gmail.com</span>
+      <span><i data-lucide="phone"></i> 6369197292</span>
+      <span><i data-lucide="linkedin"></i> <a href="https://www.linkedin.com/in/esaiy-arasi-963a33269/" target="_blank" rel="noopener">linkedin.com/in/esaiy-arasi</a></span>
+      <span><i data-lucide="github"></i> <a href="https://github.com/ESAIYARASIT" target="_blank" rel="noopener">github.com/ESAIYARASIT</a></span>
+    </div>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="entry-desc">
+        Passionate Computer Science student skilled in Python, SQL, HTML and CSS. Experienced in developing
+        AI-based and full-stack applications through academic projects and internships. Passionate about
+        applying problem-solving and web development skills to build real-world solutions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Web Developer Intern — KAR International Infotech</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <p class="entry-desc">
+          Contributed to web development tasks, enhanced frontend features, and developed applications
+          while working on real-time projects.
+        </p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Cyber Security Intern — CSUITE Tech Lab</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <p class="entry-desc">
+          Handled how real-world threats are detected and managed. Worked on prevention of unauthorized
+          access while ensuring data accuracy, reliability, and accessibility without third-party vendors.
+        </p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Full Stack Java Intern — APPIN Technology</span>
+          <span class="entry-date">2024</span>
+        </div>
+        <p class="entry-desc">
+          Created a train ticket booking website, gaining knowledge on real-world project development
+          using Java.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-head"><span class="entry-title">Explainable AI Framework for News Bias Detection and Trust Evaluation</span></div>
+        <p class="entry-desc">Built an AI system that analyzes news articles to detect bias or find them unbiased. Used BERT to understand text meaning and detect different types of bias — how news is framed and what information is included versus missing.</p>
+        <p class="entry-tags">AI · Python · NLP</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span class="entry-title">Blog Application</span></div>
+        <p class="entry-desc">A user-friendly blog platform allowing users to create, publish articles and posts with a responsive and attractive UI design.</p>
+        <p class="entry-tags">React · Node.js</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span class="entry-title">Adaptive Email Client App</span></div>
+        <p class="entry-desc">A full stack email application built with React, Node.js and the SMTP protocol, enabling users to send and receive mail.</p>
+        <p class="entry-tags">React.js · Node.js · SMTP</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Python Programming</li><li>SQL</li><li>HTML</li><li>CSS</li>
+        <li>JavaScript</li><li>Cloud Computing</li><li>React</li><li>Node.js</li><li>MongoDB</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Participation &amp; Certifications</h2>
+      <ul class="plain-list">
+        <li>NPTEL — Cloud Computing</li>
+        <li>Research paper published: "An Explainable AI Framework for News Bias Detection and Trust Evaluation"</li>
+        <li>Robomatic — Database Management (MongoDB &amp; RDBMS)</li>
+        <li>Data Analytics — Deloitte Virtual Internship</li>
+        <li>Hackathons &amp; Ideathons — Tech Trek Hackathon, Techno Kreaticon Ideathon</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">BE — Computer Science and Engineering</span>
+          <span class="entry-date">2022 – 2026</span>
+        </div>
+        <p class="entry-desc">PPG Institute of Technology, Coimbatore · CGPA 7.8</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">HSC — AMG Matric Higher Secondary School</span>
+          <span class="entry-date">2022</span>
+        </div>
+        <p class="entry-desc">78%</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">SSLC — AMG Matric Higher Secondary School</span>
+          <span class="entry-date">2020</span>
+        </div>
+        <p class="entry-desc">85%</p>
+      </div>
+    </section>
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+</script>
+</body>
+</html>
