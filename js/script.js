@@ -1,4 +1,4 @@
-// ============ ICONS ============
+
 // lucide.js is loaded with `defer`, so by DOMContentLoaded it's guaranteed ready
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) lucide.createIcons();
